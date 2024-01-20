@@ -17,9 +17,11 @@ BATCH_FILES = {}
 async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [[           
-            InlineKeyboardButton('📢 Uᴩᴅᴀᴛᴇꜱ 📢', url='https://t.me/MovieHouseChannelbot')
+            InlineKeyboardButton('📢 Uᴩᴅᴀᴛᴇꜱ 📢', url='https://t.me/+4ZCAgZcbLMowNjI1')
             ],[
-            InlineKeyboardButton('ℹ️ Hᴇʟᴩ ℹ️', url="https://t.me/+fFmB_6zNOfIzMTdl")
+            InlineKeyboardButton('ℹ️ Hᴇʟᴩ ℹ️', url="https://t.me/+4ZCAgZcbLMowNjI1")
+        ],[
+            InlineKeyboardButton("How To Open Link", url="https://t.me/+t2jrMOogPNZiNzBl")
         ]]
         await message.reply(START_MESSAGE.format(user=message.from_user.mention if message.from_user else message.chat.title, bot=client.mention), reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)                    
         await asyncio.sleep(2) 
@@ -36,12 +38,12 @@ async def start(client, message):
             InlineKeyboardButton("➕️ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Cʜᴀᴛ ➕", url=f"http://t.me/{temp.U_NAME}?startgroup=true")
             ],[
             InlineKeyboardButton("Sᴇᴀʀᴄʜ 🔎", switch_inline_query_current_chat=''), 
-            InlineKeyboardButton("Cʜᴀɴɴᴇʟ 🔈", url="https://t.me/MovieHouseChannelbot")
+            InlineKeyboardButton("Cʜᴀɴɴᴇʟ 🔈", url="https://t.me/+4ZCAgZcbLMowNjI1")
             ],[      
-            InlineKeyboardButton("Hᴇʟᴩ 🕸️", url="https://t.me/+fFmB_6zNOfIzMTdl"),
+            InlineKeyboardButton("Hᴇʟᴩ 🕸️", url="https://t.me/+4ZCAgZcbLMowNjI1"),
             InlineKeyboardButton("Aʙᴏᴜᴛ ✨", callback_data="about")
             ],[
-            InlineKeyboardButton("WhatsApp Support", url="https://whatsapp.com/channel/0029VaCoXhp8KMqtEpqACu0z")
+            InlineKeyboardButton("How To Open Link", url="https://t.me/+t2jrMOogPNZiNzBl")
         ]]
         m = await message.reply_sticker("CAACAgUAAxkBAAEBvlVk7YKnYxIHVnKW2PUwoibIR2ygGAACBAADwSQxMYnlHW4Ls8gQHgQ") 
         await asyncio.sleep(2)
@@ -69,13 +71,13 @@ async def start(client, message):
             InlineKeyboardButton("➕️ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Cʜᴀᴛ ➕", url=f"http://t.me/{temp.U_NAME}?startgroup=true")
             ],[
             InlineKeyboardButton("Sᴇᴀʀᴄʜ 🔎", switch_inline_query_current_chat=''), 
-            InlineKeyboardButton("Cʜᴀɴɴᴇʟ 🔈", url="https://t.me/MovieHouseChannelbot")
+            InlineKeyboardButton("Cʜᴀɴɴᴇʟ 🔈", url="https://t.me/+4ZCAgZcbLMowNjI1")
             ],[      
             InlineKeyboardButton("Hᴇʟᴩ 🕸️", url="https://t.me/+fFmB_6zNOfIzMTdl"),
             InlineKeyboardButton("Aʙᴏᴜᴛ ✨", callback_data="about")
             ],[
       
-            InlineKeyboardButton("WhatsApp Support", url="https://whatsapp.com/channel/0029VaCoXhp8KMqtEpqACu0z")      
+            InlineKeyboardButton("How To Open Link", url="https://t.me/+t2jrMOogPNZiNzBl")      
         ]]
         m = await message.reply_sticker("CAACAgUAAxkBAAEBvlVk7YKnYxIHVnKW2PUwoibIR2ygGAACBAADwSQxMYnlHW4Ls8gQHgQ")
         await asyncio.sleep(2)
